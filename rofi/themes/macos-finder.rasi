@@ -1,0 +1,43 @@
+* {
+    background: #F7F7F7; /* Light background */
+    foreground: #333333; /* Dark text */
+    border: 1px solid #D3D3D3; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding around the content */
+    spacing: 5px; /* Spacing between items */
+}
+
+window {
+    corner-radius: 10; /* Rounded corners for the window */
+    location: center; /* Center the window */
+    width: 500px; /* Width of the Rofi window */
+    height: 300px; /* Height of the Rofi window */
+}
+
+listview {
+    lines: 10; /* Number of visible lines */
+    fixed-height: true; /* Fix the height of the list */
+    padding: 10px; /* Padding in the list */
+    border: 0px; /* No border for the list */
+}
+
+element {
+    background: #FFFFFF; /* Item background color */
+    padding: 10px; /* Padding for each item */
+    border-radius: 5px; /* Rounded corners for items */
+}
+
+element selected {
+    background: #007AFF; /* Blue background for selected item */
+    color: #FFFFFF; /* White text for selected item */
+}
+
+element urgent {
+    background: #FF3B30; /* Red background for urgent items */
+    color: #FFFFFF; /* White text for urgent items */
+}
+
+separator {
+    background: #D3D3D3; /* Separator color */
+    height: 1px; /* Separator height */
+}

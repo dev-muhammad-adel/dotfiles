@@ -1,0 +1,40 @@
+# Enables required plugins for gestures
+plugins:
+  executors:
+    - sendkey  # Allows sending key combinations as output for gestures
+
+# Pinch gesture configuration
+pinch:
+  in:
+    sendkey: 'LEFTCTRL+KPPLUS'    # Zoom in (Ctrl + Keypad Plus)
+    continuous: true          # Enable continuous input for smoother action
+  out:
+    sendkey: 'LEFTCTRL+KPMINUS'   # Zoom out (Ctrl + Keypad Minus)
+    continuous: true          # Enable continuous input for smoother action
+
+# Swipe gesture configuration (optional)
+swipe:
+  3: 
+    left: 
+      sendkey: 'ALT+Right'    # Example: switch tabs to the right
+    right: 
+      sendkey: 'ALT+Left'     # Example: switch tabs to the left
+  4:
+    up: 
+      sendkey: 'SUPER+D'      # Example: Show desktop or minimize windows
+    down: 
+      sendkey: 'SUPER+D'      # Example: Restore windows
+
+# Fine-tuning gesture sensitivity and interval for smoothness
+threshold:
+  pinch: 0.01                # Lower threshold for finer control (default 0.1)
+  swipe: 0.2                 # Adjust as needed for swipe gestures
+
+interval:
+  pinch: 0.01                # Lower interval for smoother pinch response (default 0.1)
+  swipe: 0.1                 # Adjust as needed for swipe gestures
+
+# Optional: Log output for troubleshooting
+logger:
+  level: info                # Set to debug for detailed output
+
